@@ -1,4 +1,109 @@
 .App {
   text-align: center;
   display: flex;
+  background: #ffffde;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 450px;
+  width: 95%;
+  max-height: 80vh;
+  background: #d3ebcd;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  padding: 20px;
+  box-shadow: -2px 8px 9px -3px rgba(0, 0, 0, 0.15);
+}
+
+.header__title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2d3436;
+  padding-bottom: 8px;
+}
+
+.header__subtitle {
+  margin: 0;
+  color: #2d3436;
+  font-size: 0.9rem;
+}
+
+.main {
+  height: 100%;
+  overflow: hidden auto;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 30px 30px 0;
+  row-gap: 30px;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.main::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #b2bec3;
+  column-gap: 20px;
+  padding-bottom: 30px;
+}
+
+.contact:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.contact__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.contact__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact__infodesc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5px;
+}
+
+.contact__info-txt {
+  margin: 0;
+  text-align: left;
+}
+.contact__infodesc-txt {
+  margin: 0;
+  font-size: 0.9rem;
 }
